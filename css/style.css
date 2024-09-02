@@ -429,6 +429,7 @@ h2.side-head.first-head {
     display: table;
     table-layout: fixed;
     width: 795px;
+    background: #fff;
     margin: 0px auto;
 
 }
@@ -569,4 +570,13 @@ margin-bottom: 0;
 
 #Container{
 background: #f5f5f5;
+}
+
+.link{
+   color:#0049c7;
+   text-decoration: underline;
+}
+
+.flip{
+    transform: rotate(0deg) scaleX(-1);
 }

@@ -1,0 +1,12 @@
+<meta charset="UTF-8">
+<meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=1" />
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link href="/css/ypo-style.css?v=1A8" rel="stylesheet" media="all" />
+<link href="/css/style.css?v=1B8" rel="stylesheet" media="all" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="/js/jquery-3.4.1.min.js"></script>
+<script src="/js/ypo-functions.js?v=1BD"></script>
+<script src="/js/ypo-config.js"></script>

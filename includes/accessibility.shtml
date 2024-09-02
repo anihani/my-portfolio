@@ -1,0 +1,22 @@
+<div id="Accessibility">
+  <div class="dfwOff">
+    <ul>
+      <li class="adaOn"><a href="?dfw=on" aria-label="Switch to Accessibility View" title="Accessible Tool Options"><span data-icon="&#xf29a;"></span></a></li>
+      <li class="adaClose"><a href="javascript:void(0);" id="adaClose" aria-label="Hide Accessible Options">Hide</a></li>
+    </ul>
+  </div>
+  <div class="dfwOn">
+    <div class="dfwHead">Accessibility Tools</div>
+    <ul>
+      <li id="dfw-WhiteMode"><a href="javascript:void(0);" aria-label="Light Mode" data-icon="&#xe826;">Light Mode</a></li>
+      <li id="dfw-BlackMode"><a href="javascript:void(0);" aria-label="Contrast Mode" data-icon="&#xe827;">Contrast Mode</a></li>
+      <li id="dfw-GreyMode"><a href="javascript:void(0);" aria-label="Grey Mode" data-icon="&#xe81c;">Grey Mode</a></li>
+      <li class="fontPlus"><a href="javascript:void(0);" aria-label="Increase Font Size" data-icon="&#xe824;">Increase Font Size</a></li>
+      <li class="fontMinus"><a href="javascript:void(0);" aria-label="Decrease Font Size" data-icon="&#xe823;">Decrease Font Size</a></li>
+      <li class="fontReset"><a href="javascript:void(0);" aria-label="Make Font Reset" data-icon="&#xe825;">Reset Font Default</a></li>
+      <li><a href="/accessibility.html" aria-label="More information about accessibility" accesskey="k" data-icon="&#xf29a;">Accessibility Options</a></li>
+      <li class="adaOff"><a href="?dfw=off" aria-label="Reset to Normal Site View" data-icon="&#xf177;">Back to Main Site</a></li>
+    </ul>
+    <div class="dfwClose"><a href="javascript:void(0);" id="dfwClose" aria-label="close Accessible View">Hide</a></div>
+  </div>
+</div>

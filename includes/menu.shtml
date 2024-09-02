@@ -1,0 +1,25 @@
+<div class="sticky-menu-ht">
+    <nav id="Menu-Container" data-skip="Menu">
+       
+    </nav>
+</div>
+<div class="left-mobile-menu">
+    <div class="menuClose"><a href="javascript:void(0);">Close <span></span></a></div>
+    <div id="sidebar-nav-logo">
+        <a href="/"><img class="penci-lazy" src="/images/simple-blog.png" alt="simple blog" style="display: inline;"></a>
+    </div>
+    <div class="main-nav-social">
+        <div class="inner-header-social">
+            <a href="#" rel="nofollow" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="#" rel="nofollow" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="#" rel="nofollow" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="#" rel="nofollow" target="_blank"><i class="fa fa-pinterest"></i></a>
+            <a href="#" rel="nofollow" target="_blank"><i class="fa fa-tumblr"></i></a>
+            <a href="#" rel="nofollow" target="_blank"><i class="fa fa-youtube-play"></i></a>
+            <a href="#" rel="nofollow" target="_blank"><i class="fa fa-heart"></i></a>
+            <!--                        <a href="#" rel="nofollow" target="_blank"><i class="fa fa-snapchat-ghost"></i></a>-->
+            <div class="clear-float"></div>
+        </div>
+    </div>
+    <div class="Wrapper"></div>
+</div>
