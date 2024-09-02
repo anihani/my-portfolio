@@ -1,0 +1,572 @@
+/* ---------- Theme CSS ---------- */
+#Map-Container,
+#Main-Container {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#Accessibility,
+#Header,
+#Banner,
+#Content-Main,
+#Footer,
+#Main-Menu,
+#Mobile-Menu,
+#Service,
+#Credibility,
+#Main-In,
+#Menu-wrap,
+#Foot-widet-In,
+#Contact-Map-In {
+    max-width: 940px;
+    min-width: 300px;
+    margin: 0px auto;
+    padding: 0px;
+    position: relative;
+}
+
+body {
+    background: #fff;
+
+}
+
+/* Default Custom CSS */
+.img-l {
+    margin: 0px 15px 10px 0px;
+}
+
+.img-r {
+    margin: 0px 0px 10px 15px;
+}
+
+.img-c {
+    margin: 10px;
+}
+
+/* Selection CSS */
+#Container ::selection {
+    background: #CCC;
+    color: #000;
+}
+
+/* ADA Icon CSS */
+.adaOn span {
+    background: #003263;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* Scroller CSS */
+#Scroller a {
+    background: #f5f5f5;
+    border: 1px solid #ddd9d9;
+    color: #000;
+    border-radius: 2px;
+    display: none;
+}
+
+/* Header CSS */
+#Header {
+    min-height: 0px;
+    margin: 0px;
+}
+
+#Header {
+    padding: 0px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    line-height: 0px;
+}
+
+/* Menu CSS */
+
+
+#Main-In {
+    padding: 5px;
+
+}
+
+.main-border {}
+
+.conntent-container {
+    padding: 10px;
+    /* border: 1px solid #e6e6e6; */
+    border-bottom: 0px;
+    border-bottom: 2px solid #000;
+}
+
+.top-header {
+    position: relative;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #000;
+    /* background: #f6f6f6; */
+}
+
+.my-img {
+    position: absolute;
+    right: 50px;
+    width: 130px;
+    bottom: 11px;
+    border: 1px solid #d2d0d0;
+    z-index: 9;
+    height: 147px;
+    background: #fff;
+    padding: 3px;
+}
+
+.top-Name {
+    margin-bottom: 5px;
+    padding: 10px 0px 0px 0px;
+    border-radius: 3px;
+}
+
+.contact-header {
+    /* position: absolute; */
+    bottom: 0px;
+    /* border: 1px solid; */
+    width: 100%;
+    left: 0px;
+    padding: 12px 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #e6e6e6;
+    border-bottom: 0px;
+    font-size: 0px;
+    text-transform: capitalize;
+    /* border-bottom: 4px solid #000; */
+}
+
+.contact-header li {
+    /* display: inline-block;
+    vertical-align: top; */
+    width: 33.33%;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding-left: 40px;
+    text-transform: lowercase;
+    position: relative;
+    color: #000;
+}
+
+.contact-header li:before {
+    position: absolute;
+    left: 12px;
+    top: -1px;
+    font-size: 20px;
+}
+
+.contact-header li:after {
+    /* content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #ccc;
+    right: 30px;
+    top: 0px; */
+}
+
+.contact-header li:last-child:after {
+    content: none;
+}
+
+.contact-header li:nth-child(2) {
+    width: 25%;
+}
+
+.contact-header li:nth-child(1) {
+    width: 35%;
+}
+
+.contact-header li:nth-child(3) {
+    width: 25%;
+    text-transform: capitalize;
+}
+
+.about-list {
+    font-size: 0px;
+    margin: 1.5%;
+    /* border-bottom: 4px solid #000; */
+
+}
+
+.about-list li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    width: 50%;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.about-list li span.info-title {
+    color: #8a8a8a;
+    font-weight: 400;
+}
+
+h1 span {
+    display: block;
+    text-transform: none;
+}
+
+.main-cell {
+    padding: 0px 0px 0px 0px;
+    display: block;
+
+}
+
+.sub-head {
+    padding: 10px 0px 10px 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #003758;
+    background: none;
+    /* background: rgb(246, 246, 246); */
+    margin: 0px -8px;
+    margin-bottom: 5px;
+}
+
+.clg-lctn {
+    margin: 0px 0px 0px 10px;
+    font-size: 10px;
+    /*    color: #00e !important;*/
+}
+
+/*
+.color-blue {
+    color: #00e !important;
+}
+
+.info-dtls-side span {
+    color: #00e !important;
+}
+*/
+
+.clg-lctn:before {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.year {
+    margin: 0px 0px 0px 0px;
+    font-size: 10px;
+    /*    color: #00e !important;*/
+}
+
+.year:before {
+    display: inline-block;
+    margin-right: 5px;
+
+}
+
+.company-hd {
+    margin-bottom: 5px;
+}
+
+/* Sidebar CSS */
+h1 {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+h1 span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.dis-inline-wrap {
+    font-size: 0px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-count: 2;
+    margin: 2% 0%;
+    flex-direction: row;
+}
+
+.dis-inline-wrap h2.side-head {
+    font-size: 18px;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    color: #02bfe7;
+}
+
+.dis-inline {
+    width: 50%;
+    font-size: 14px;
+    text-align: left;
+    display: table;
+    padding: 0px 20px;
+    margin-bottom: 0px;
+
+}
+
+h2.side-head.first-head {
+    margin-top: 0px;
+}
+
+.side-info {
+    padding: 0px 0px 0px 5px;
+}
+
+.info-dtls-side {
+    margin-bottom: 10px;
+}
+
+.side-list li {
+    position: relative;
+    padding-left: 0px;
+}
+
+.side-list li::before {
+    width: 5px;
+    height: 5px;
+    background: #000;
+    left: 0px;
+    top: 7px;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    content: none;
+}
+
+.main-cell .side-list li::before {
+    width: 5px;
+    height: 5px;
+    background: #000;
+    left: 9px;
+    top: 9px;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    content: none;
+}
+
+.side-list li {
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 10px;
+}
+
+.main-cell .side-list li {
+    padding: 0px 0px 0px 25px;
+}
+
+.main-cell .side-list li span.info-title {
+    color: #8a8a8a;
+}
+
+.edu-list li {
+    position: relative;
+}
+
+.edu-list li .mark-percent {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.declaratn {
+    margin: 0px 0px 10px 0px;
+
+}
+
+.prfl-pic {
+    border: 2px solid #f5f5f5;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.prfl-pic span {
+    position: absolute;
+    bottom: 0px;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 2px 0px;
+}
+
+.float-left {
+    float: left;
+    margin-top: 10px;
+
+}
+
+.float-right {
+    float: right;
+}
+
+.clear-float {
+    clear: both;
+    margin-top: 10px;
+}
+
+.declaratn {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.declaratn-head {
+    margin-bottom: 5px;
+}
+
+.keyskill {
+    color: #003758;
+}
+
+.main-tbale {
+    display: table;
+    table-layout: fixed;
+    width: 795px;
+    margin: 0px auto;
+
+}
+
+.left-table {
+    display: table-cell;
+    padding: 0px 5px 0px 10px;
+    vertical-align: top;
+}
+
+.right-table {
+    display: table-cell;
+    width: 230px;
+    background: #312d35;
+    color: #cdc9cf;
+    padding: 10px 10px;
+}
+
+.section-space {
+    padding: 15px 0px;
+    border-top: 2px solid #000;
+}
+
+.hex {
+    display: flex;
+    position: relative;
+    width: 190px;
+    height: 200px;
+    background-color: #424242;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin: 0px auto;
+    margin-bottom: 20px;
+    background: url(/images/anil-img2.jpg) top center;
+    background-size: contain;
+}
+
+.section-sidebar {
+    margin-bottom: 15px;
+    border-bottom: 1px dotted #8f8c93;
+    padding-bottom: 10px;
+
+
+}
+
+.job {
+    margin-bottom: 15px;
+}
+
+.job .job-title {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.contact-list {
+    li {
+        display: flex;
+        margin-bottom: 7px;
+
+        .info-text {
+            padding-left: 5px;
+        }
+    }
+}
+
+.side-list{
+    .branc-name{
+        font-weight: 600;
+    }
+}
+
+.tool-list{
+    li {
+        span{
+font-weight: 700;
+display: block;
+        }
+    }
+}
+
+.responsibilities {
+    
+    p{
+        margin-bottom: 5px;
+    }
+    ul {
+        padding-left: 0px;
+        li{
+            margin-bottom: 5px;
+         position: relative;
+         padding-left: 10px;
+            
+        }
+        li::before{
+            width: 5px;
+            height: 5px;
+            background: #000;
+            left: 0px;
+            top: 4px;
+            position: absolute;
+            content: "";
+            border-radius: 50%;
+        }
+    }
+}
+
+.certification-list, .awards-list{
+    li{
+        margin-bottom: 5px;
+     position: relative;
+     padding-left: 10px;
+        
+    }
+    li::before{
+        width: 5px;
+        height: 5px;
+        background: #000;
+        left: 0px;
+        top: 4px;
+        position: absolute;
+        content: "";
+        border-radius: 50%;
+    }
+}
+
+.mb-0{
+margin-bottom: 0;
+}
+
+.border-0{
+    border: 0px !important;
+}
+
+#Container{
+background: #f5f5f5;
+}
