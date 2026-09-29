@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Anilkumar H J — UI / Front-end Developer specialising in Angular. Experience, skills, education and awards.">
+  <meta name="color-scheme" content="light dark">
+  <title>Anilkumar H J | Front-end Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Mrs+Saint+Delafield&display=swap">
+<style>
+  :root {
+    --paper: #F2F4F7;
+    --sheet: #FFFFFF;
+    --ink: #131B2E;
+    --ink-2: #4A5468;
+    --ink-3: #7A8396;
+    --rule: #DCE1E9;
+    --pen: #2340B0;
+    --pen-soft: #E6EBFA;
+    --seal: #B7791F;
+    --seal-soft: #F7EEDD;
+    --shadow: 0 1px 2px rgba(19,27,46,.06), 0 8px 24px rgba(19,27,46,.06);
+
+    --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --f-body: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+    --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    --f-sign: "Mrs Saint Delafield", "Brush Script MT", cursive;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --paper: #0D1220;
+      --sheet: #151C2E;
+      --ink: #E7EBF3;
+      --ink-2: #AEB6C7;
+      --ink-3: #7D879B;
+      --rule: #263049;
+      --pen: #8FA6FF;
+      --pen-soft: #1C2748;
+      --seal: #E0A94F;
+      --seal-soft: #2D2515;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper: #0D1220;
+    --sheet: #151C2E;
+    --ink: #E7EBF3;
+    --ink-2: #AEB6C7;
+    --ink-3: #7D879B;
+    --rule: #263049;
+    --pen: #8FA6FF;
+    --pen-soft: #1C2748;
+    --seal: #E0A94F;
+    --seal-soft: #2D2515;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  img { max-width: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 16px/1.6 var(--f-body);
+    padding-inline: 20px;
+    padding-block: 40px 64px;
+  }
+  a { color: var(--pen); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:hover { text-decoration-thickness: 2px; }
+  :focus-visible { outline: 2px solid var(--pen); outline-offset: 3px; border-radius: 3px; }
+
+  .wrap { max-width: 1080px; margin: 0 auto; display: grid; gap: 28px; }
+
+  /* ---------- Hero: signature field ---------- */
+  .hero {
+    background: var(--sheet);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: clamp(24px, 5vw, 48px);
+    display: grid;
+    gap: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .eyebrow {
+    font: 500 12px/1 var(--f-mono);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .hero h1 {
+    font: 800 clamp(34px, 6vw, 60px)/1.02 var(--f-display);
+    letter-spacing: -.02em;
+    margin: 10px 0 12px;
+    text-wrap: balance;
+  }
+  .roles { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .roles li {
+    font: 500 13px/1 var(--f-mono);
+    padding: 7px 10px;
+    border-radius: 999px;
+    background: var(--pen-soft);
+    color: var(--pen);
+  }
+  .summary { max-width: 64ch; color: var(--ink-2); font-size: 17px; margin: 0; }
+
+  .sign-field { display: grid; gap: 8px; max-width: 520px; }
+  .sign-tag {
+    justify-self: start;
+    font: 500 11px/1 var(--f-mono);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--seal);
+    background: var(--seal-soft);
+    padding: 6px 9px;
+    border-radius: 4px;
+  }
+  .sign-line {
+    position: relative;
+    border-bottom: 1.5px solid var(--ink);
+    padding: 4px 4px 0 28px;
+    min-height: 78px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .sign-line::before {
+    content: "×";
+    position: absolute; left: 2px; bottom: 6px;
+    font: 500 18px/1 var(--f-body);
+    color: var(--ink-3);
+  }
+  .signature {
+    font: 400 clamp(52px, 9vw, 76px)/.9 var(--f-sign);
+    color: var(--pen);
+    transform: translateY(18%);
+    white-space: nowrap;
+  }
+  .audit {
+    display: flex; flex-wrap: wrap; gap: 6px 24px;
+    font: 400 12px/1.5 var(--f-mono);
+    color: var(--ink-3);
+  }
+  .audit b { font-weight: 500; color: var(--ink-2); }
+
+  .stats { display: flex; flex-wrap: wrap; gap: 12px 36px; padding-top: 4px; }
+  .stat { display: grid; }
+  .stat strong { font: 700 28px/1.1 var(--f-display); font-variant-numeric: tabular-nums; }
+  .stat span { font-size: 13px; color: var(--ink-3); }
+
+  /* ---------- Two-column body ---------- */
+  .cols { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 28px; align-items: start; }
+  @media (max-width: 860px) { .cols { grid-template-columns: 1fr; } }
+
+  aside { display: grid; gap: 28px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); }
+  @media (max-width: 860px) { aside { position: static; order: 2; } }
+
+  section h2 {
+    font: 700 13px/1 var(--f-mono);
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin: 0 0 16px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  section h2::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
+
+  /* Contact */
+  .contact { display: grid; gap: 10px; }
+  .contact-row {
+    display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px;
+    padding: 10px 12px;
+    background: var(--sheet);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+  }
+  .contact-row .k { font: 500 11px/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); display: block; margin-bottom: 4px; }
+  .contact-row .v { font-size: 15px; color: var(--ink); text-decoration: none; word-break: break-all; user-select: all; }
+  .copy {
+    font: 500 12px/1 var(--f-mono);
+    border: 1px solid var(--rule);
+    background: transparent;
+    color: var(--ink-2);
+    padding: 7px 9px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .copy:hover { border-color: var(--pen); color: var(--pen); }
+  .copy.done { color: var(--seal); border-color: var(--seal); }
+
+  /* Skills */
+  .skill-group { display: grid; gap: 8px; }
+  .skill-group + .skill-group { margin-top: 16px; }
+  .skill-group h3 { font: 600 14px/1.2 var(--f-body); margin: 0; color: var(--ink); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips span {
+    font: 400 12.5px/1 var(--f-mono);
+    padding: 6px 8px;
+    border: 1px solid var(--rule);
+    border-radius: 5px;
+    color: var(--ink-2);
+    background: var(--sheet);
+  }
+
+  /* Education */
+  .edu { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+  .edu li { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; }
+  .edu .deg { font-weight: 600; }
+  .edu .score { font: 500 13px/1.5 var(--f-mono); color: var(--pen); text-align: right; font-variant-numeric: tabular-nums; }
+  .edu .meta { grid-column: 1 / -1; font-size: 14px; color: var(--ink-3); }
+
+  /* Experience timeline */
+  main { display: grid; gap: 40px; min-width: 0; }
+  .timeline { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+  .job {
+    display: grid;
+    grid-template-columns: 22px minmax(0, 1fr);
+    gap: 0 18px;
+  }
+  .rail { position: relative; }
+  .rail::before {
+    content: ""; position: absolute; left: 50%; top: 10px; bottom: 0;
+    width: 1.5px; transform: translateX(-50%); background: var(--rule);
+  }
+  .job:last-child .rail::before { display: none; }
+  .dot {
+    position: absolute; left: 50%; top: 6px; transform: translateX(-50%);
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--sheet); border: 2px solid var(--pen);
+  }
+  .job.current .dot { background: var(--pen); box-shadow: 0 0 0 4px var(--pen-soft); }
+  .job-body { padding-bottom: 32px; }
+  .job-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; }
+  .job h3 { font: 700 21px/1.25 var(--f-display); margin: 0; letter-spacing: -.01em; }
+  .when { font: 400 13px/1.4 var(--f-mono); color: var(--ink-3); white-space: nowrap; }
+  .role { font-weight: 600; color: var(--pen); margin: 4px 0 12px; }
+  .job ul.points { margin: 0 0 14px; padding-left: 18px; color: var(--ink-2); display: grid; gap: 6px; max-width: 70ch; }
+  .job ul.points li::marker { color: var(--ink-3); }
+  .now {
+    font: 500 11px/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase;
+    color: var(--seal); background: var(--seal-soft); padding: 4px 7px; border-radius: 4px; margin-left: 8px;
+    vertical-align: 3px;
+  }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 14.5px; margin-bottom: 12px; }
+
+  /* Recognition */
+  .recog { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--sheet);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 18px 20px;
+    display: grid; gap: 6px; align-content: start;
+  }
+  .card .kicker { font: 500 11px/1 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--seal); }
+  .card h3 { font: 700 17px/1.3 var(--f-display); margin: 0; }
+  .card p { margin: 0; font-size: 14.5px; color: var(--ink-2); }
+
+  .certs { margin: 0; padding: 0; list-style: none; display: grid; gap: 0; }
+  .certs li {
+    display: grid; grid-template-columns: 1fr auto; gap: 12px;
+    padding: 12px 0; border-bottom: 1px solid var(--rule);
+  }
+  .certs li:first-child { border-top: 1px solid var(--rule); }
+  .certs .by { font: 400 13px/1.6 var(--f-mono); color: var(--ink-3); text-align: right; }
+
+  .langs { font-size: 15px; color: var(--ink-2); margin: 0; }
+
+  footer { text-align: center; font: 400 12px/1.6 var(--f-mono); color: var(--ink-3); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .signature { animation: ink 1.1s ease-out both; }
+    @keyframes ink { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div>
+      <div class="eyebrow">Front-end · UI · Web applications</div>
+      <h1>Anilkumar H J</h1>
+      <ul class="roles">
+        <li>Senior Software Engineer</li>
+        <li>Angular</li>
+        <li>Mysuru, India</li>
+      </ul>
+    </div>
+
+    <p class="summary">
+      Front-end developer building complex web applications since 2018, currently working on an
+      Angular-based digital-signature platform. I care about responsive, accessible, multi-language
+      interfaces and work closely with design and back-end teams to get the details right.
+    </p>
+
+    <div class="sign-field" aria-label="Signature block">
+      <span class="sign-tag">Sign here</span>
+      <div class="sign-line"><span class="signature" aria-hidden="true">Anilkumar H J</span></div>
+      <div class="audit">
+        <span><b>Signed by</b> Anilkumar H J</span>
+        <span><b>Role</b> UI / Front-end Developer</span>
+        <span><b>Since</b> 2018-07</span>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><strong id="yrs">8+</strong><span>years building for the web</span></div>
+      <div class="stat"><strong>3</strong><span>companies</span></div>
+      <div class="stat"><strong>3×</strong><span>employee awards</span></div>
+    </div>
+  </header>
+
+  <div class="cols">
+
+    <aside>
+      <section aria-labelledby="h-contact">
+        <h2 id="h-contact">Contact</h2>
+        <div class="contact">
+          <div class="contact-row">
+            <div><span class="k">Email</span><a class="v" id="c-email" href="mailto:anilkumarhj07@gmail.com">anilkumarhj07@gmail.com</a></div>
+            <button class="copy" type="button" data-copy="c-email">Copy</button>
+          </div>
+          <div class="contact-row">
+            <div><span class="k">Phone</span><a class="v" id="c-phone" href="tel:+919945703127">+91 99457 03127</a></div>
+            <button class="copy" type="button" data-copy="c-phone">Copy</button>
+          </div>
+          <div class="contact-row">
+            <div><span class="k">Based in</span><span class="v">Mysuru, Karnataka</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="h-skills">
+        <h2 id="h-skills">Skills</h2>
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="chips"><span>TypeScript</span><span>JavaScript ES6+</span><span>HTML5</span><span>CSS3</span><span>SCSS</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Frameworks &amp; UI</h3>
+          <div class="chips"><span>Angular</span><span>Angular Material</span><span>Ionic</span><span>Bootstrap</span><span>jQuery</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Tooling</h3>
+          <div class="chips"><span>Git</span><span>GitHub</span><span>GitLab</span><span>Bitbucket</span><span>SVN</span><span>npm</span><span>Webpack</span><span>Babel</span><span>VS Code</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Design</h3>
+          <div class="chips"><span>Figma</span><span>Adobe XD</span><span>Photoshop</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Practices</h3>
+          <div class="chips"><span>REST APIs</span><span>Responsive design</span><span>i18n</span><span>CMS</span><span>FTP</span><span>Agile / Scrum</span></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="h-edu">
+        <h2 id="h-edu">Education</h2>
+        <ul class="edu">
+          <li>
+            <span class="deg">B.E. Computer Science</span><span class="score">7.1 CGPA</span>
+            <span class="meta">SJCE, Mysuru · 2014–2018</span>
+          </li>
+          <li>
+            <span class="deg">PUC</span><span class="score">84.33%</span>
+            <span class="meta">Bharathi PU College, Maddur · 2012–2014</span>
+          </li>
+          <li>
+            <span class="deg">SSLC</span><span class="score">79.68%</span>
+            <span class="meta">Govt High School, Maddur · 2011–2012</span>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="h-lang">
+        <h2 id="h-lang">Languages spoken</h2>
+        <p class="langs">English · Kannada · Telugu</p>
+      </section>
+    </aside>
+
+    <main>
+      <section aria-labelledby="h-exp">
+        <h2 id="h-exp">Experience</h2>
+        <ol class="timeline">
+          <li class="job current">
+            <div class="rail"><span class="dot"></span></div>
+            <div class="job-body">
+              <div class="job-head">
+                <h3>Certinal Software <span class="now">Current</span></h3>
+                <span class="when">Jul 2022 — Present</span>
+              </div>
+              <div class="role">Senior Software Engineer</div>
+              <ul class="points">
+                <li>Develop and maintain Angular web applications for a digital-signature (eSignature) product.</li>
+                <li>Build responsive, accessible interfaces with international and multi-language support.</li>
+                <li>Integrate RESTful APIs for reliable data exchange with back-end services.</li>
+                <li>Use modern front-end tooling to improve performance and design quality.</li>
+                <li>Work with cross-functional teams to ship high-quality software.</li>
+              </ul>
+              <div class="links"><a href="https://www.certinal.com/" target="_blank" rel="noopener">certinal.com ↗</a></div>
+              <div class="chips"><span>Angular</span><span>TypeScript</span><span>Material</span><span>Bootstrap</span><span>SCSS</span></div>
+            </div>
+          </li>
+
+          <li class="job">
+            <div class="rail"><span class="dot"></span></div>
+            <div class="job-body">
+              <div class="job-head">
+                <h3>Long Tail Sourcing India</h3>
+                <span class="when">Jul 2021 — Jul 2022</span>
+              </div>
+              <div class="role">Front-End Developer</div>
+              <ul class="points">
+                <li>Built a bulk-buying commerce app in Ionic and Angular.</li>
+                <li>Shipped <strong>Konnectbox</strong>, a B2B e-commerce Android app.</li>
+                <li>Styled with Bootstrap, Material and SCSS for a modern, responsive UI.</li>
+                <li>Integrated REST APIs and tuned mobile performance and UX.</li>
+              </ul>
+              <div class="links"><a href="https://play.google.com/store/apps/details?id=io.konnectbox.starter" target="_blank" rel="noopener">Konnectbox on Google Play ↗</a></div>
+              <div class="chips"><span>Ionic</span><span>Angular</span><span>JavaScript</span><span>SCSS</span></div>
+            </div>
+          </li>
+
+          <li class="job">
+            <div class="rail"><span class="dot"></span></div>
+            <div class="job-body">
+              <div class="job-head">
+                <h3>Your Practice Online</h3>
+                <span class="when">Jul 2018 — Jul 2021</span>
+              </div>
+              <div class="role">Software Engineer</div>
+              <ul class="points">
+                <li>Designed and built healthcare websites for clinics and medical-device companies.</li>
+                <li>Delivered responsive, mobile-friendly sites on jQuery and content-management systems.</li>
+                <li>Turned Photoshop designs into production UI with cross-browser compatibility.</li>
+                <li>Managed site content and worked with designers and back-end developers.</li>
+              </ul>
+              <div class="links">
+                <a href="https://www.bplmedicaltechnologies.com/" target="_blank" rel="noopener">BPL Medical Technologies ↗</a>
+                <a href="https://www.ossi-virginia.com/" target="_blank" rel="noopener">OSSI Virginia ↗</a>
+                <a href="https://www.zacharyzimmermd.com/" target="_blank" rel="noopener">Zachary Zimmer MD ↗</a>
+                <a href="https://www.lombardispine.com/" target="_blank" rel="noopener">Lombardi Spine ↗</a>
+              </div>
+              <div class="chips"><span>HTML</span><span>CSS</span><span>jQuery</span><span>CMS</span><span>Photoshop</span></div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="h-awards">
+        <h2 id="h-awards">Recognition</h2>
+        <div class="recog">
+          <div class="card">
+            <span class="kicker">2019 · Your Practice Online</span>
+            <h3>Best Employee of the Year</h3>
+            <p>For outstanding performance and significant contributions to the team.</p>
+          </div>
+          <div class="card">
+            <span class="kicker">Twice · Certinal Software</span>
+            <h3>Best Employee of the Month</h3>
+            <p>For exceptional performance and dedication to project success.</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="h-certs">
+        <h2 id="h-certs">Certifications</h2>
+        <ul class="certs">
+          <li><span>CSS Certification</span><span class="by">HackerRank · 2022</span></li>
+          <li><span>SPFx Web Part Solutions</span><span class="by">Udemy</span></li>
+          <li><span>Skill Assessment</span><span class="by">LinkedIn</span></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer>Anilkumar H J · UI / Front-end Developer · Mysuru</footer>
+</div>
+
+<script>
+  (function () {
+    var start = new Date(2018, 6, 1), now = new Date();
+    var yrs = Math.floor((now - start) / (365.25 * 24 * 3600 * 1000));
+    if (yrs > 0) document.getElementById('yrs').textContent = yrs + '+';
+
+    document.querySelectorAll('.copy').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var el = document.getElementById(btn.dataset.copy);
+        var text = el.textContent.trim();
+        var ok = function () { btn.textContent = 'Copied'; btn.classList.add('done'); setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600); };
+        var fallback = function () { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected'; };
+        try { navigator.clipboard.writeText(text).then(ok, fallback); } catch (e) { fallback(); }
+      });
+    });
+  })();
+</script>
+</body>
+</html>
