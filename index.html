@@ -1,241 +1,776 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR">
-    <meta name="viewport" content="width=1024, initial-scale=1">
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-    <link href="./css/ypo-style.css?v=1A8" rel="stylesheet" media="all" />
-    <link href="./css/style.css?v=1B8" rel="stylesheet" media="all" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Anilkumar H J | Senior Front-end &amp; Angular Developer, Mysuru</title>
+<meta name="description" content="Anilkumar H J (Anil Kumar HJ) is a Senior Software Engineer and Angular front-end developer in Mysuru, India, building responsive, accessible web applications since 2018. View experience, skills and contact." />
+<meta name="author" content="Anilkumar H J" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://anihani.github.io/my-portfolio/" />
+<link rel="icon" href="images/favicon.ico" />
+<link rel="apple-touch-icon" href="images/anil-img.jpg" />
+<meta name="theme-color" content="#7c3aed" />
+<!-- Google Search Console: paste your verification tag here, e.g.
+<meta name="google-site-verification" content="YOUR_CODE" /> -->
 
-        <script src="./js/jquery-3.4.1.min.js"></script>
-        <script src="./js/ypo-functions.js?v=1BD"></script>
-        <script src="./js/ypo-config.js"></script>
+<!-- Open Graph (LinkedIn, WhatsApp, Facebook previews) -->
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="Anilkumar H J" />
+<meta property="og:title" content="Anilkumar H J | Senior Front-end &amp; Angular Developer" />
+<meta property="og:description" content="Senior Software Engineer building Angular web applications since 2018. Mysuru, India." />
+<meta property="og:url" content="https://anihani.github.io/my-portfolio/" />
+<meta property="og:image" content="https://anihani.github.io/my-portfolio/images/anil-img.jpg" />
+<meta property="og:image:alt" content="Photo of Anilkumar H J" />
+<meta property="og:locale" content="en_IN" />
+<meta property="profile:first_name" content="Anilkumar" />
+<meta property="profile:last_name" content="H J" />
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Anilkumar H J | Senior Front-end &amp; Angular Developer" />
+<meta name="twitter:description" content="Senior Software Engineer building Angular web applications since 2018. Mysuru, India." />
+<meta name="twitter:image" content="https://anihani.github.io/my-portfolio/images/anil-img.jpg" />
+
+<!-- Structured data: tells Google this page is about a person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://anihani.github.io/my-portfolio/#person",
+      "name": "Anilkumar H J",
+      "alternateName": ["Anil Kumar H J", "Anilkumar HJ", "Anil Kumar HJ"],
+      "jobTitle": "Senior Software Engineer",
+      "description": "Front-end developer specialising in Angular, TypeScript and responsive, accessible, multi-language web applications.",
+      "url": "https://anihani.github.io/my-portfolio/",
+      "image": "https://anihani.github.io/my-portfolio/images/anil-img.jpg",
+      "email": "mailto:anilkumarhj07@gmail.com",
+      "address": { "@type": "PostalAddress", "addressLocality": "Mysuru", "addressRegion": "Karnataka", "addressCountry": "IN" },
+      "worksFor": { "@type": "Organization", "name": "Certinal Software", "url": "https://www.certinal.com/" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Sri Jayachamarajendra College of Engineering (SJCE), Mysuru" },
+      "knowsAbout": ["Angular", "TypeScript", "JavaScript", "HTML5", "CSS3", "SCSS", "Angular Material", "Ionic", "Bootstrap", "Responsive web design", "Internationalization (i18n)", "REST APIs", "Figma"],
+      "knowsLanguage": ["English", "Kannada", "Telugu"],
+      "award": ["Best Employee of the Year 2019, Your Practice Online", "Best Employee of the Month (twice), Certinal Software"]
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://anihani.github.io/my-portfolio/#webpage",
+      "url": "https://anihani.github.io/my-portfolio/",
+      "name": "Anilkumar H J | Senior Front-end & Angular Developer",
+      "inLanguage": "en",
+      "dateModified": "2026-10-05",
+      "mainEntity": { "@id": "https://anihani.github.io/my-portfolio/#person" }
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Great+Vibes&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  /* ============ THEME TOKENS (purple) ============ */
+  :root {
+    --bg: #f7f4ff;
+    --bg-2: #efe8ff;
+    --surface: #ffffff;
+    --surface-2: #faf7ff;
+    --border: #e4daff;
+    --text: #1e1433;
+    --text-2: #4b3f66;
+    --muted: #7a6d96;
+    --primary: #7c3aed;
+    --primary-2: #a855f7;
+    --primary-3: #c084fc;
+    --primary-ink: #ffffff;
+    --chip-bg: #f1eaff;
+    --chip-text: #5b21b6;
+    --glow: rgba(124, 58, 237, .25);
+    --shadow: 0 10px 30px -12px rgba(76, 29, 149, .25);
+    --grad: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #d946ef 100%);
+    --radius: 18px;
+    --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    --sig: "Great Vibes", "Brush Script MT", cursive;
+    color-scheme: light;
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f0a1e;
+    --bg-2: #160e2b;
+    --surface: #1a1131;
+    --surface-2: #21173d;
+    --border: #33255a;
+    --text: #f1ebff;
+    --text-2: #cbbdf0;
+    --muted: #9686c0;
+    --primary: #a78bfa;
+    --primary-2: #c084fc;
+    --primary-3: #e9d5ff;
+    --primary-ink: #160e2b;
+    --chip-bg: #2a1d4d;
+    --chip-text: #ddd0ff;
+    --glow: rgba(167, 139, 250, .3);
+    --shadow: 0 14px 40px -14px rgba(0, 0, 0, .6);
+    --grad: linear-gradient(135deg, #8b5cf6 0%, #c084fc 50%, #f0abfc 100%);
+    color-scheme: dark;
+  }
+
+  /* ============ BASE ============ */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body {
+    margin: 0;
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+    overflow-x: hidden;
+    transition: background .3s ease, color .3s ease;
+  }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ::selection { background: var(--primary-2); color: #fff; }
+
+  /* animated background blobs */
+  .bg-blobs { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+  .blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: .45; animation: float 18s ease-in-out infinite; }
+  .blob.b1 { width: 480px; height: 480px; background: #a855f7; top: -140px; left: -120px; }
+  .blob.b2 { width: 420px; height: 420px; background: #7c3aed; bottom: -160px; right: -100px; animation-delay: -6s; }
+  .blob.b3 { width: 300px; height: 300px; background: #e879f9; top: 40%; left: 55%; animation-delay: -12s; opacity: .25; }
+  :root[data-theme="dark"] .blob { opacity: .22; }
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(40px, -30px) scale(1.06); }
+    66% { transform: translate(-30px, 30px) scale(.95); }
+  }
+
+  .container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+  /* ============ NAV ============ */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: saturate(160%) blur(14px);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    background: color-mix(in srgb, var(--bg) 75%, transparent);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 16px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; color: var(--text); letter-spacing: -.02em; }
+  .brand:hover { text-decoration: none; }
+  .brand-mark {
+    width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center;
+    background: var(--grad); color: #fff; font-size: 14px; font-weight: 800; box-shadow: 0 6px 18px -6px var(--glow);
+  }
+  .nav-links { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
+  .nav-links a {
+    display: block; padding: 8px 14px; border-radius: 999px; color: var(--text-2);
+    font-size: 14px; font-weight: 500; transition: background .2s, color .2s;
+  }
+  .nav-links a:hover { text-decoration: none; background: var(--chip-bg); color: var(--primary); }
+  .nav-links a.active { background: var(--primary); color: var(--primary-ink); }
+  .nav-actions { display: flex; align-items: center; gap: 8px; }
+  .icon-btn {
+    width: 40px; height: 40px; border-radius: 12px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); cursor: pointer; display: grid; place-items: center;
+    transition: transform .2s, border-color .2s;
+  }
+  .icon-btn:hover { transform: translateY(-2px); border-color: var(--primary); }
+  .icon-btn svg { width: 18px; height: 18px; }
+  .menu-btn { display: none; }
+
+  /* ============ HERO ============ */
+  .hero { padding: 72px 0 40px; }
+  .hero-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 48px; align-items: center; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--primary); background: var(--chip-bg); padding: 6px 12px; border-radius: 999px;
+  }
+  .eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 4px rgba(34,197,94,.2); animation: pulse 2s infinite; }
+  @keyframes pulse { 50% { box-shadow: 0 0 0 8px rgba(34,197,94,0); } }
+  .hero h1 {
+    font-size: clamp(40px, 6.5vw, 72px); line-height: 1.02; letter-spacing: -.035em;
+    margin: 18px 0 12px; font-weight: 800;
+  }
+  .grad-text { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .role { font-size: clamp(18px, 2.2vw, 22px); color: var(--text-2); font-weight: 500; margin: 0 0 18px; }
+  .role .typed { color: var(--primary); font-weight: 700; }
+  .role .caret { display: inline-block; width: 2px; height: 1em; background: var(--primary); vertical-align: -2px; margin-left: 2px; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+  .meta span {
+    display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--text-2);
+    padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface);
+  }
+  .meta svg { width: 14px; height: 14px; color: var(--primary); }
+  .lead { font-size: 17px; color: var(--text-2); max-width: 580px; margin: 0 0 28px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 12px;
+    font-weight: 600; font-size: 15px; border: 1px solid transparent; cursor: pointer; transition: transform .2s, box-shadow .2s;
+    font-family: inherit;
+  }
+  .btn:hover { text-decoration: none; transform: translateY(-2px); }
+  .btn-primary { background: var(--grad); color: #fff; box-shadow: 0 10px 24px -10px var(--glow); }
+  .btn-primary:hover { box-shadow: 0 14px 30px -10px var(--glow); }
+  .btn-ghost { background: var(--surface); color: var(--text); border-color: var(--border); }
+  .btn-ghost:hover { border-color: var(--primary); color: var(--primary); }
+  .btn svg { width: 16px; height: 16px; }
+
+  /* signature card */
+  .sign-card {
+    position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: 22px;
+    padding: 26px; box-shadow: var(--shadow); overflow: hidden; transform: rotate(1.2deg); transition: transform .4s;
+  }
+  .sign-card:hover { transform: rotate(0) translateY(-4px); }
+  .sign-card::before {
+    content: ""; position: absolute; inset: 0 0 auto 0; height: 6px; background: var(--grad);
+  }
+  .sign-tag {
+    display: inline-flex; align-items: center; gap: 6px; background: #fde047; color: #422006;
+    font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .12em;
+    padding: 5px 10px 5px 8px; border-radius: 4px 999px 999px 4px; margin-bottom: 14px;
+  }
+  .sig-svg { width: 100%; height: 110px; display: block; }
+  .sig-svg text {
+    font-family: var(--sig); font-size: 64px; fill: transparent; stroke: var(--primary); stroke-width: 1.1;
+    stroke-dasharray: 1400; stroke-dashoffset: 1400;
+  }
+  .sig-svg.draw text { animation: draw 3.2s ease forwards; }
+  @keyframes draw { 70% { fill: transparent; } to { stroke-dashoffset: 0; fill: var(--primary); } }
+  .sig-line { border-top: 1.5px dashed var(--border); margin: 4px 0 14px; }
+  .sig-details { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; font-size: 13px; }
+  .sig-details dt { color: var(--muted); font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; padding-top: 2px; }
+  .sig-details dd { margin: 0; color: var(--text); font-weight: 600; }
+  .verified { display: inline-flex; align-items: center; gap: 6px; color: #16a34a; }
+  .verified svg { width: 14px; height: 14px; }
+
+  /* stats */
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+  .stat {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 22px; text-align: left; transition: transform .25s, border-color .25s;
+  }
+  .stat:hover { transform: translateY(-4px); border-color: var(--primary-3); }
+  .stat-num { font-size: 40px; font-weight: 800; letter-spacing: -.03em; line-height: 1; }
+  .stat-label { color: var(--muted); font-size: 14px; margin-top: 6px; }
+
+  /* ============ SECTIONS ============ */
+  section.block { padding: 64px 0; }
+  .section-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 28px; }
+  .section-num { font-family: var(--mono); font-size: 13px; color: var(--primary); }
+  .section-title { font-size: clamp(26px, 3.4vw, 36px); font-weight: 800; letter-spacing: -.025em; margin: 0; }
+  .section-head::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--border), transparent); align-self: center; }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 24px; box-shadow: 0 1px 0 rgba(0,0,0,.02);
+  }
+
+  /* chips */
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    font-size: 13px; font-weight: 500; padding: 6px 12px; border-radius: 999px;
+    background: var(--chip-bg); color: var(--chip-text); border: 1px solid transparent; transition: all .2s;
+  }
+  .chip:hover { border-color: var(--primary-2); transform: translateY(-1px); }
+
+  /* skills */
+  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .skill-card h3 { display: flex; align-items: center; gap: 10px; font-size: 16px; margin: 0 0 14px; }
+  .skill-icon { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; background: var(--chip-bg); color: var(--primary); }
+  .skill-icon svg { width: 18px; height: 18px; }
+
+  /* timeline */
+  .timeline { position: relative; padding-left: 28px; }
+  .timeline::before {
+    content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px;
+    background: linear-gradient(var(--primary), var(--primary-3), transparent);
+  }
+  .job { position: relative; margin-bottom: 22px; }
+  .job::before {
+    content: ""; position: absolute; left: -28px; top: 28px; width: 16px; height: 16px; border-radius: 50%;
+    background: var(--surface); border: 3px solid var(--primary); box-shadow: 0 0 0 5px var(--chip-bg);
+  }
+  .job.current::before { background: var(--primary); }
+  .job-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; }
+  .job h3 { margin: 0; font-size: 20px; letter-spacing: -.01em; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .badge {
+    font-family: var(--mono); font-size: 10px; font-weight: 600; letter-spacing: .12em; padding: 3px 8px;
+    border-radius: 6px; background: var(--grad); color: #fff;
+  }
+  .date { font-family: var(--mono); font-size: 13px; color: var(--muted); }
+  .job-role { color: var(--primary); font-weight: 600; margin: 4px 0 12px; }
+  .job ul { margin: 0 0 14px; padding-left: 18px; color: var(--text-2); }
+  .job li { margin-bottom: 4px; }
+  .job li::marker { color: var(--primary-2); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 14px; font-size: 14px; font-weight: 600; }
+
+  /* two-col */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+  /* awards */
+  .award { position: relative; overflow: hidden; }
+  .award-icon {
+    width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center;
+    background: var(--grad); color: #fff; margin-bottom: 14px; box-shadow: 0 10px 22px -10px var(--glow);
+  }
+  .award-icon svg { width: 24px; height: 24px; }
+  .award .kicker { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; color: var(--muted); text-transform: uppercase; }
+  .award h3 { margin: 4px 0 8px; font-size: 19px; }
+  .award p { margin: 0; color: var(--text-2); font-size: 15px; }
+  .award::after {
+    content: "★"; position: absolute; right: -6px; bottom: -36px; font-size: 140px; color: var(--chip-bg); line-height: 1; z-index: 0;
+  }
+  .award > * { position: relative; z-index: 1; }
+
+  /* certs */
+  .cert-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .cert { display: flex; gap: 14px; align-items: center; }
+  .cert .skill-icon { width: 42px; height: 42px; flex-shrink: 0; }
+  .cert h4 { margin: 0; font-size: 15px; }
+  .cert span { font-size: 13px; color: var(--muted); }
+
+  /* education */
+  .edu-list { display: grid; gap: 12px; }
+  .edu { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .edu h4 { margin: 0 0 2px; font-size: 16px; }
+  .edu p { margin: 0; color: var(--muted); font-size: 14px; }
+  .score {
+    font-weight: 800; font-size: 18px; color: var(--primary); white-space: nowrap;
+    background: var(--chip-bg); padding: 6px 12px; border-radius: 10px;
+  }
+  .spoken { margin-top: 16px; }
+  .spoken h4 { margin: 0 0 10px; font-size: 13px; font-family: var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+
+  /* contact */
+  .contact-wrap {
+    position: relative; border-radius: 26px; padding: 44px; overflow: hidden; color: #fff;
+    background: var(--grad); box-shadow: 0 30px 60px -30px var(--glow);
+  }
+  .contact-wrap::before {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(circle at 85% 15%, rgba(255,255,255,.25), transparent 40%),
+                radial-gradient(circle at 10% 90%, rgba(255,255,255,.15), transparent 40%);
+  }
+  .contact-wrap > * { position: relative; }
+  .contact-wrap h2 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 8px; letter-spacing: -.03em; }
+  .contact-wrap > p { margin: 0 0 28px; opacity: .9; max-width: 520px; }
+  .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .contact-item {
+    background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.25); border-radius: 16px;
+    padding: 16px 18px; backdrop-filter: blur(6px);
+  }
+  .contact-item .label { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; opacity: .8; }
+  .contact-item .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 4px; }
+  .contact-item a, .contact-item .val { color: #fff; font-weight: 600; word-break: break-all; }
+  .copy-btn {
+    flex-shrink: 0; background: rgba(255,255,255,.2); color: #fff; border: 0; border-radius: 8px;
+    padding: 6px 10px; font-size: 12px; font-weight: 600; cursor: pointer; font-family: inherit; transition: background .2s;
+  }
+  .copy-btn:hover { background: rgba(255,255,255,.35); }
+
+  footer { padding: 36px 0 48px; text-align: center; color: var(--muted); font-size: 14px; }
+  footer .sig { font-family: var(--sig); font-size: 28px; color: var(--primary); display: block; margin-bottom: 4px; }
+
+  /* to-top + toast */
+  .to-top {
+    position: fixed; right: 20px; bottom: 20px; z-index: 40; opacity: 0; pointer-events: none;
+    transform: translateY(12px); transition: all .3s; background: var(--grad); color: #fff; border: 0;
+  }
+  .to-top.show { opacity: 1; pointer-events: auto; transform: none; }
+  .toast {
+    position: fixed; left: 50%; bottom: 28px; transform: translate(-50%, 20px); opacity: 0; z-index: 60;
+    background: var(--text); color: var(--bg); padding: 10px 18px; border-radius: 10px; font-size: 14px; font-weight: 600;
+    transition: all .3s; pointer-events: none;
+  }
+  .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+  /* scroll progress */
+  .progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; background: var(--grad); z-index: 100; }
+
+  /* reveal */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+    .sign-card { transform: none; max-width: 480px; }
+    .two-col, .cert-grid, .contact-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
+    .menu-btn { display: grid; }
+    .nav-links {
+      position: absolute; top: 68px; left: 0; right: 0; flex-direction: column; gap: 2px; padding: 12px 16px 16px;
+      background: var(--surface); border-bottom: 1px solid var(--border); box-shadow: var(--shadow);
+      display: none;
+    }
+    .nav-links.open { display: flex; }
+    .nav-links a { padding: 12px 14px; border-radius: 10px; }
+    .hero { padding-top: 44px; }
+    .stats { grid-template-columns: 1fr; }
+    .contact-wrap { padding: 28px 20px; }
+    .container { padding: 0 16px; }
+    .section-head::after { display: none; }
+    .edu { flex-direction: column; align-items: flex-start; gap: 8px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+    .reveal { opacity: 1; transform: none; }
+    .sig-svg text { stroke-dashoffset: 0; fill: var(--primary); }
+  }
+</style>
 </head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="bg-blobs" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
 
-<body class="home">
-    <div id="Container">
-        <section>
-            <div class="main-tbale">
-                <div class="right-table">
-                    <div>
-                        <div class="hex">
-                            <div class="my-img-a text-center"><img src="./images/latte.jpg" alt="" class="flip"></div>
-                        </div>
-                    </div>
-                    <div class="section-sidebar">
-                        <h2>Contact Us</h2>
-                        <ul class="contact-list">
-                            <li data-icon="&#xe800;">
-                                <div class="info-text"><span id="e382062233">[javascript protected email address]</span>
-                                    <script type="text/javascript">
-                                        /*<![CDATA[*/
-                                        eval(
-                                            "var a=\"OSRz6WZ7-hBLQyjTweoDJPq1rUk8KsV0@Im25ti4+gXF.C9nNYu3acvAdGbExH_Mpfl\";var b=a.split(\"\").sort().join(\"\");var c=\"gvYa3HcgbNuzByncgYaRFAc\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"e382062233\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+d+\"</a>\"") /*]]>*/
-                                    </script>
-                                </div>
-                            </li>
-                            <li data-icon="&#xe802;">
-                                <div class="info-text"><span><a href="tel:+919945703127">9945703127</a></span></div>
-                            </li>
-                            <li data-icon="&#xe803;">
-                                <div class="info-text"><span><a href="tel:+919945703127">#1240, 5th cross, Janatha
-                                            Nagar, TK layour, Mysuru</a></span></div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="section-sidebar">
-                        <h2>Education</h2>
-                        <div class="sub-content">
-                            <ul class="side-list edu-list">
-                                <li>
-                                    <div>
-                                        <div class="branc-name">Bachelor of Engineering in Computer Science</div>
-                                        <div class="college-name">SJCE Mysuru</div>
-                                    </div>
-                                    <div><span class="year" data-icon="&#xe805">2014-2018</span> <span class="clg-lctn"
-                                            data-icon="&#xe803">Mysuru, Karnataka</span></div>
-                                    <div class="mark-percent">7.1/10 (CGPA)</div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <div class="branc-name">PUC</div>
-                                        <div class="college-name">Bharathi PU College</div>
-                                    </div>
-                                    <div><span class="year" data-icon="&#xe805">2012-2014</span> <span class="clg-lctn"
-                                            data-icon="&#xe803"><a href="https://goo.gl/maps/wzckb9LbKYHFZpAr7"
-                                                target="_blank">Maddur, Karnataka</a></span></div>
-                                    <div class="mark-percent">84.33%</div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <div class="branc-name">SSLC</div>
-                                        <div class="college-name">Govt High School</div>
-                                    </div>
-                                    <div><span class="year" data-icon="&#xe805">2011-2012</span> <span class="clg-lctn"
-                                            data-icon="&#xe803"><a href="https://goo.gl/maps/CghZrH4rmDpDQ4k79"
-                                                target="_blank">Maddur, Karnataka</a></span></div>
-                                    <div class="mark-percent">79.68%</div>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <div class="section-sidebar">
-                        <h2>Technical Skills</h2>
-                        <div class="sub-content">
-                            <div class="info-dtls-side">
-                                <ul class="side-list tool-list">
-                                    <li><span>Languages: </span>HTML5, CSS3, JavaScript (ES6+), SCSS, Bootstrap,
-                                        Typescript, Material Angular</li>
-                                    <li><span>Frameworks/Libraries:</span> Angular, Ionic, jQuery</li>
-                                    <li><span>Tools & Platforms:</span> Git, npm, Webpack, Babel, VS Code</li>
-                                    <li><span>Design & Prototyping:</span> Adobe XD, Figma, Photoshop</li>
-                                    <li><span>Version Control:</span> Git, GitHub, GITBash, GitLab, Bitbucket</li>
-                                    <li><span>Other:</span>RESTful APIs, Responsive Design, FTP, CMS, SVN, Agile/Scrum
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="section-sidebar border-0">
-                        <h2>Language Known</h2>
-                        <ul class="">
-                            <li>English, Kannada, Telugu</li>
-                            
-                        </ul>
-                        <p>&nbsp;</p>
-                    </div>
-                </div>
-                <div class="left-table">
-                    <div class="top-Name">
-                        <h1>ANILKUMAR H J <br />
-                            <p><span>UI Developer/Front end Developer/Web Application developer</span></p>
-                        </h1>
-                    </div>
-
-                    <div class="section-space">
-                        <h2>Professional Summary</h2>
-                        <p>Front-End Developer with <strong>6 years</strong> of experience designing, developing, and
-                            managing complex web applications and sites. Proficient in HTML, CSS, JavaScript, and modern
-                            frameworks such as Angular. Adept at collaborating with cross-functional teams to deliver
-                            outstanding user experiences. Strong problem-solving abilities and a keen eye for detail.
-                        </p>
-                    </div>
-
-                    <div class="section-space">
-                        <h2>Professional Experience</h2>
-                        <div class="sub-section">
-                            <div class="sub-content">
-                                <div>
-
-
-                                    <div class="job">
-                                        <p class="job-title">Certinal Software Pvt Ltd</p>
-                                        <p><strong>Role:</strong> Senior Software Engineer | <strong>Duration:</strong> July 2022 - Present</p>
-                                        <p></p>
-                                        <p class="technologies"><strong>Technologies Used:</strong> Angular, HTML, CSS,
-                                            JavaScript, Material, Bootstrap, SCSS, TypeScript</p>
-                                        <div class="responsibilities">
-                                            <p><strong>Key Responsibilities:</strong></p>
-                                            <ul>
-                                                <li>Develop and maintain Angular-based web applications for a digital
-                                                    signature product. <a rel="noopener" target="_new" href="https://esign-au-uat.certinal.com/" class="link">Site Link</a></li>
-                                                <li>Implement responsive and accessible user interfaces with
-                                                    international and multi-language support.</li>
-                                                <li>Collaborate with cross-functional teams to ensure high-quality
-                                                    software solutions.</li>
-                                                <li>Use modern front-end tools and frameworks to enhance application
-                                                    performance and design.</li>
-                                                <li>Integrated RESTful APIs to enhance application functionality and
-                                                    ensure seamless data exchange with back-end services.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="job">
-                                        <p class="job-title">Long Tail Sourcing India Pvt Ltd</p>
-                                        <p><strong>Role:</strong> Front-End Developer | <strong>Duration:</strong> July 2021 - July 2022</p>
-                                        <p class="technologies"><strong>Technologies Used:</strong> Ionic, Angular,
-                                            HTML, CSS, JavaScript, Gitbash</p>
-                                        <div class="responsibilities">
-                                            <p><strong>Key Responsibilities:</strong></p>
-                                            <ul>
-                                                <li>Developed a bulk item buying app similar to Amazon using Ionic and
-                                                    Angular.</li>
-                                                <li>Implemented user interfaces with Bootstrap, Material, and SCSS to
-                                                    ensure a modern and responsive design.</li>
-                                                <li>Integrated REST APIs to handle data exchange and enhance application
-                                                    functionality.</li>
-                                                <li>Created and optimized mobile applications for performance and user
-                                                    experience.</li>
-                                                <li>Konnectbox App: E-commerce B2B Android app. <a rel="noopener" target="_new" href="https://play.google.com/store/apps/details?id=io.konnectbox.starter&amp;pcampaignid=web_share" class="link">Play Store Link</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="job mb-0">
-                                        <p class="job-title">Your Practice Online Pvt Ltd</p>
-                                        <p><strong>Role:</strong> Software Engineer | <strong>Duration:</strong> July 2018 - July 2021</p>
-                                        <p class="technologies"><strong>Technologies Used:</strong> HTML, CSS,
-                                            JavaScript, jQuery, Responsive Websites, FTP, CMS, Adobe Photoshop</p>
-                                        <div class="responsibilities">
-                                            <p><strong>Key Responsibilities:</strong></p>
-                                            <ul>
-                                                <li>Designed and developed healthcare websites including <a rel="noopener" target="_new" href="https://www.bplmedicaltechnologies.com/" class="link">BPL Medical Technologies</a>, <a rel="noopener" target="_new" href="https://www.ossi-virginia.com/" class="link">OSSI Virginia</a>, <a rel="noopener" target="_new" href="https://www.zacharyzimmermd.com/" class="link">Zachary Zimmer MD</a>, and <a rel="noopener" target="_new" href="https://www.lombardispine.com/" class="link">Lombardi Spine</a>.</li>
-                                                </li>
-                                                <li>Ensured responsive and mobile-friendly designs with jQuery and
-                                                    content management systems.</li>
-                                                <li>Utilized Adobe Photoshop for UI development to create visually
-                                                    appealing interfaces.</li>
-                                                <li>Managed and updated content, ensuring cross-browser compatibility
-                                                    and optimized performance.</li>
-                                                <li>Collaborated with designers and back-end developers to enhance user
-                                                    experiences.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-space">
-                        <h2>Certifications</h2>
-                        <ul class="certification-list">
-                            <li><strong>SPFx Webpart Solution,</strong> Udemy,</li>
-                            <li><strong>CSS Certification,</strong> HackerRank (2022)</li>
-                            <li><strong>LinkedIn Skill Assessment</strong></li>
-                        </ul>
-                    </div>
-                    <div class="section-space">
-                        <h2>Awards and Honors</h2>
-                        <ul class="awards-list">
-                            <li><strong>Best Employee of the Year, Your Practice Online Pvt Ltd, 2019</strong>
-
-                                <p>Recognized for outstanding performance and significant contributions to the team.</p>
-                            </li>
-                            <li><strong>Best Employee of the Month, Certinal Software Pvt Ltd</strong>
-                                <p>Awarded twice for exceptional performance and dedication to project success.</p>
-                        </ul>
-                        </li>
-
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-
-        </section>
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand"><span class="brand-mark">AK</span> Anilkumar H J</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#recognition">Recognition</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
     </div>
-</body>
+  </div>
+</header>
 
+<main id="top">
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="reveal">
+          <span class="eyebrow"><span class="dot"></span>Front-end · UI · Web Applications</span>
+          <h1>Hi, I'm <span class="grad-text">Anilkumar H J</span></h1>
+          <p class="role">Senior Software Engineer · <span class="typed" id="typed">Angular</span><span class="caret"></span></p>
+          <div class="meta">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Mysuru, India</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Certinal Software</span>
+          </div>
+          <p class="lead">Front-end developer building complex web applications since 2018, currently working on an Angular-based digital-signature platform. I care about responsive, accessible, multi-language interfaces and work closely with design and back-end teams to get the details right.</p>
+          <div class="cta">
+            <a href="#contact" class="btn btn-primary">Get in touch
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+            <a href="#experience" class="btn btn-ghost">View experience</a>
+          </div>
+        </div>
+
+        <aside class="sign-card reveal" aria-label="Signature card">
+          <span class="sign-tag">✍ SIGN HERE</span>
+          <svg class="sig-svg" id="sigSvg" viewBox="0 0 420 110" role="img" aria-label="Signature: Anilkumar H J">
+            <text x="10" y="78">Anilkumar H J</text>
+          </svg>
+          <div class="sig-line"></div>
+          <dl class="sig-details">
+            <dt>Signed by</dt><dd>Anilkumar H J <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Verified</span></dd>
+            <dt>Role</dt><dd>UI / Front-end Developer</dd>
+            <dt>Since</dt><dd>2018-07</dd>
+          </dl>
+        </aside>
+      </div>
+
+      <div class="stats">
+        <div class="stat reveal"><div class="stat-num grad-text"><span data-count="8">0</span>+</div><div class="stat-label">years building for the web</div></div>
+        <div class="stat reveal"><div class="stat-num grad-text"><span data-count="3">0</span></div><div class="stat-label">companies</div></div>
+        <div class="stat reveal"><div class="stat-num grad-text"><span data-count="3">0</span>×</div><div class="stat-label">employee awards</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="block" id="skills">
+    <div class="container">
+      <div class="section-head reveal"><span class="section-num">01</span><h2 class="section-title">Skills</h2></div>
+      <div class="skills-grid">
+        <div class="card skill-card reveal">
+          <h3><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span>Languages</h3>
+          <div class="chips"><span class="chip">TypeScript</span><span class="chip">JavaScript ES6+</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">SCSS</span></div>
+        </div>
+        <div class="card skill-card reveal">
+          <h3><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>Frameworks &amp; UI</h3>
+          <div class="chips"><span class="chip">Angular</span><span class="chip">Angular Material</span><span class="chip">Ionic</span><span class="chip">Bootstrap</span><span class="chip">jQuery</span></div>
+        </div>
+        <div class="card skill-card reveal">
+          <h3><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>Tooling</h3>
+          <div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">GitLab</span><span class="chip">Bitbucket</span><span class="chip">SVN</span><span class="chip">npm</span><span class="chip">Webpack</span><span class="chip">Babel</span><span class="chip">VS Code</span></div>
+        </div>
+        <div class="card skill-card reveal">
+          <h3><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><circle cx="11" cy="11" r="2"/></svg></span>Design</h3>
+          <div class="chips"><span class="chip">Figma</span><span class="chip">Adobe XD</span><span class="chip">Photoshop</span></div>
+        </div>
+        <div class="card skill-card reveal">
+          <h3><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg></span>Practices</h3>
+          <div class="chips"><span class="chip">REST APIs</span><span class="chip">Responsive design</span><span class="chip">i18n</span><span class="chip">CMS</span><span class="chip">FTP</span><span class="chip">Agile / Scrum</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="block" id="experience">
+    <div class="container">
+      <div class="section-head reveal"><span class="section-num">02</span><h2 class="section-title">Experience</h2></div>
+      <div class="timeline">
+        <article class="job current reveal">
+          <div class="card">
+            <div class="job-top"><h3>Certinal Software <span class="badge">CURRENT</span></h3><span class="date">Jul 2022 — Present</span></div>
+            <p class="job-role">Senior Software Engineer</p>
+            <ul>
+              <li>Develop and maintain Angular web applications for a digital-signature (eSignature) product.</li>
+              <li>Build responsive, accessible interfaces with international and multi-language support.</li>
+              <li>Integrate RESTful APIs for reliable data exchange with back-end services.</li>
+              <li>Use modern front-end tooling to improve performance and design quality.</li>
+              <li>Work with cross-functional teams to ship high-quality software.</li>
+            </ul>
+            <div class="links"><a href="https://www.certinal.com/" target="_blank" rel="noopener">certinal.com ↗</a></div>
+            <div class="chips"><span class="chip">Angular</span><span class="chip">TypeScript</span><span class="chip">Material</span><span class="chip">Bootstrap</span><span class="chip">SCSS</span></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="card">
+            <div class="job-top"><h3>Long Tail Sourcing India</h3><span class="date">Jul 2021 — Jul 2022</span></div>
+            <p class="job-role">Front-End Developer</p>
+            <ul>
+              <li>Built a bulk-buying commerce app in Ionic and Angular.</li>
+              <li>Shipped Konnectbox, a B2B e-commerce Android app.</li>
+              <li>Styled with Bootstrap, Material and SCSS for a modern, responsive UI.</li>
+              <li>Integrated REST APIs and tuned mobile performance and UX.</li>
+            </ul>
+            <div class="links"><a href="https://play.google.com/store/apps/details?id=io.konnectbox.starter" target="_blank" rel="noopener">Konnectbox on Google Play ↗</a></div>
+            <div class="chips"><span class="chip">Ionic</span><span class="chip">Angular</span><span class="chip">JavaScript</span><span class="chip">SCSS</span></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="card">
+            <div class="job-top"><h3>Your Practice Online</h3><span class="date">Jul 2018 — Jul 2021</span></div>
+            <p class="job-role">Software Engineer</p>
+            <ul>
+              <li>Designed and built healthcare websites for clinics and medical-device companies.</li>
+              <li>Delivered responsive, mobile-friendly sites on jQuery and content-management systems.</li>
+              <li>Turned Photoshop designs into production UI with cross-browser compatibility.</li>
+              <li>Managed site content and worked with designers and back-end developers.</li>
+            </ul>
+            <div class="links">
+              <a href="https://www.bplmedicaltechnologies.com/" target="_blank" rel="noopener">BPL Medical Technologies ↗</a>
+              <a href="https://www.ossi-virginia.com/" target="_blank" rel="noopener">OSSI Virginia ↗</a>
+              <a href="https://www.zacharyzimmermd.com/" target="_blank" rel="noopener">Zachary Zimmer MD ↗</a>
+              <a href="https://www.lombardispine.com/" target="_blank" rel="noopener">Lombardi Spine ↗</a>
+            </div>
+            <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">jQuery</span><span class="chip">CMS</span><span class="chip">Photoshop</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RECOGNITION + CERTS ============ -->
+  <section class="block" id="recognition">
+    <div class="container">
+      <div class="section-head reveal"><span class="section-num">03</span><h2 class="section-title">Recognition</h2></div>
+      <div class="two-col">
+        <div class="card award reveal">
+          <div class="award-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></div>
+          <span class="kicker">2019 · Your Practice Online</span>
+          <h3>Best Employee of the Year</h3>
+          <p>For outstanding performance and significant contributions to the team.</p>
+        </div>
+        <div class="card award reveal">
+          <div class="award-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg></div>
+          <span class="kicker">Twice · Certinal Software</span>
+          <h3>Best Employee of the Month</h3>
+          <p>For exceptional performance and dedication to project success.</p>
+        </div>
+      </div>
+
+      <h3 class="reveal" style="margin:40px 0 16px;font-size:20px;">Certifications</h3>
+      <div class="cert-grid">
+        <div class="card cert reveal"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></span><div><h4>CSS Certification</h4><span>HackerRank · 2022</span></div></div>
+        <div class="card cert reveal"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></span><div><h4>SPFx Web Part Solutions</h4><span>Udemy</span></div></div>
+        <div class="card cert reveal"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></span><div><h4>Skill Assessment</h4><span>LinkedIn</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="block" id="education">
+    <div class="container">
+      <div class="section-head reveal"><span class="section-num">04</span><h2 class="section-title">Education</h2></div>
+      <div class="card reveal">
+        <div class="edu-list">
+          <div class="edu"><div><h4>B.E. Computer Science</h4><p>SJCE, Mysuru · 2014–2018</p></div><span class="score">7.1 CGPA</span></div>
+          <div class="sig-line" style="margin:0"></div>
+          <div class="edu"><div><h4>PUC</h4><p>Bharathi PU College, Maddur · 2012–2014</p></div><span class="score">84.33%</span></div>
+          <div class="sig-line" style="margin:0"></div>
+          <div class="edu"><div><h4>SSLC</h4><p>Govt High School, Maddur · 2011–2012</p></div><span class="score">79.68%</span></div>
+        </div>
+        <div class="spoken">
+          <h4>Languages spoken</h4>
+          <div class="chips"><span class="chip">English</span><span class="chip">Kannada</span><span class="chip">Telugu</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="block" id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <h2>Let's build something great.</h2>
+        <p>Open to conversations about front-end engineering, Angular applications and UI work.</p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="label">EMAIL</div>
+            <div class="row"><a href="mailto:anilkumarhj07@gmail.com">anilkumarhj07@gmail.com</a><button class="copy-btn" data-copy="anilkumarhj07@gmail.com">Copy</button></div>
+          </div>
+          <div class="contact-item">
+            <div class="label">PHONE</div>
+            <div class="row"><a href="tel:+919945703127">+91 99457 03127</a><button class="copy-btn" data-copy="+91 99457 03127">Copy</button></div>
+          </div>
+          <div class="contact-item">
+            <div class="label">BASED IN</div>
+            <div class="row"><span class="val">Mysuru, Karnataka</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="sig">Anilkumar H J</span>
+  UI / Front-end Developer · Mysuru · © <span id="year"></span>
+</footer>
+
+<button class="icon-btn to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  const root = document.documentElement;
+  const $ = (s, c = document) => c.querySelector(s);
+  const $$ = (s, c = document) => [...c.querySelectorAll(s)];
+
+  /* ---- theme (light / dark purple) ---- */
+  const moon = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+  const sun = '<circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>';
+  function setTheme(t) {
+    root.setAttribute('data-theme', t);
+    $('#themeIcon').innerHTML = t === 'dark' ? sun : moon;
+    try { localStorage.setItem('ak-theme', t); } catch (e) {}
+  }
+  let saved = null;
+  try { saved = localStorage.getItem('ak-theme'); } catch (e) {}
+  setTheme(saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+  $('#themeBtn').addEventListener('click', () => setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
+
+  /* ---- mobile menu ---- */
+  const menuBtn = $('#menuBtn'), navLinks = $('#navLinks');
+  menuBtn.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+  });
+  $$('a', navLinks).forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open'); menuBtn.setAttribute('aria-expanded', false);
+  }));
+
+  /* ---- typing effect ---- */
+  const words = ['Angular', 'TypeScript', 'Responsive UI', 'Accessibility', 'i18n'];
+  const typed = $('#typed');
+  let wi = 0, ci = words[0].length, deleting = true;
+  function tick() {
+    const w = words[wi];
+    ci += deleting ? -1 : 1;
+    typed.textContent = w.slice(0, ci);
+    let delay = deleting ? 55 : 95;
+    if (!deleting && ci === w.length) { deleting = true; delay = 1600; }
+    else if (deleting && ci === 0) { deleting = false; wi = (wi + 1) % words.length; delay = 300; }
+    setTimeout(tick, delay);
+  }
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) setTimeout(tick, 1800);
+
+  /* ---- signature draw ---- */
+  setTimeout(() => $('#sigSvg').classList.add('draw'), 400);
+
+  /* ---- count-up ---- */
+  function countUp(el) {
+    const end = +el.dataset.count, dur = 1200, t0 = performance.now();
+    (function step(t) {
+      const p = Math.min((t - t0) / dur, 1);
+      el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) requestAnimationFrame(step);
+    })(t0);
+  }
+
+  /* ---- reveal on scroll ---- */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      $$('[data-count]', e.target).forEach(countUp);
+      io.unobserve(e.target);
+    });
+  }, { threshold: .12 });
+  $$('.reveal').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(el); });
+
+  /* ---- active nav link ---- */
+  const links = $$('.nav-links a');
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  $$('main section[id]').forEach(s => spy.observe(s));
+
+  /* ---- scroll progress + back-to-top ---- */
+  const bar = $('#progress'), toTop = $('#toTop');
+  function onScroll() {
+    const h = document.documentElement.scrollHeight - innerHeight;
+    bar.style.width = (h > 0 ? (scrollY / h) * 100 : 0) + '%';
+    toTop.classList.toggle('show', scrollY > 600);
+  }
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+
+  /* ---- copy to clipboard ---- */
+  const toast = $('#toast'); let toastTimer;
+  function showToast(msg) {
+    toast.textContent = msg; toast.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.classList.remove('show'), 1800);
+  }
+  $$('.copy-btn').forEach(btn => btn.addEventListener('click', async () => {
+    const text = btn.dataset.copy;
+    try { await navigator.clipboard.writeText(text); }
+    catch (e) {
+      const ta = Object.assign(document.createElement('textarea'), { value: text });
+      document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
+    }
+    btn.textContent = 'Copied!'; setTimeout(() => (btn.textContent = 'Copy'), 1500);
+    showToast('Copied: ' + text);
+  }));
+
+  $('#year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
 </html>
